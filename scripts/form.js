@@ -1,8 +1,3 @@
-// =========================================
-// W05 Product Review Form
-// Author: Stellina Wendy Foketi
-// =========================================
-
 const products = [
     {
         id: "fc-1888",
@@ -31,10 +26,6 @@ const products = [
     }
 ];
 
-// =========================================
-// Populate Product Select
-// =========================================
-
 const productSelect = document.querySelector("#productName");
 
 products.forEach((product) => {
@@ -46,12 +37,6 @@ products.forEach((product) => {
     productSelect.appendChild(option);
 });
 
-// =========================================
-// Footer
-// =========================================
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
 
-document.querySelector("#currentyear").textContent =
-    new Date().getFullYear();
-
-document.querySelector("#lastModified").textContent =
-    document.lastModified;
+document.querySelector("#lastModified").textContent = document.lastModified;
